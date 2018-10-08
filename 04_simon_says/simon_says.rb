@@ -21,11 +21,9 @@ end
 def titleize(a)
 #   puts a
    puncs = ["and", "the", "to", "of", "by", "from", "or"]
-   a.split(" ").map {|word| word.capitalize}.join(" ")
+#   a.split(" ").map {|word| word.capitalize}.join(" ")
    a.split.map(&:capitalize)*' '
-#   if a.puncs.include?
-#      a.downcase
-#    else
+#
 #      a.capitalize
 #   end
 #
@@ -42,7 +40,6 @@ end
 #              if x.to_i = 0
 #                 x.capitalise
 #              else
-#                x.downcase
 #              end
 #            else
 #                w.capitalize
